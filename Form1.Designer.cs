@@ -90,7 +90,7 @@ namespace game3
             this.platform.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.platform.Location = new System.Drawing.Point(-4, 664);
             this.platform.Name = "platform";
-            this.platform.Size = new System.Drawing.Size(671, 30);
+            this.platform.Size = new System.Drawing.Size(392, 30);
             this.platform.TabIndex = 1;
             this.platform.TabStop = false;
             this.platform.Tag = "platform";
@@ -154,7 +154,7 @@ namespace game3
             // 
             this.verticalPlatform.BackColor = System.Drawing.Color.DimGray;
             this.verticalPlatform.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.verticalPlatform.Location = new System.Drawing.Point(380, 260);
+            this.verticalPlatform.Location = new System.Drawing.Point(368, 334);
             this.verticalPlatform.Name = "verticalPlatform";
             this.verticalPlatform.Size = new System.Drawing.Size(80, 30);
             this.verticalPlatform.TabIndex = 7;
@@ -338,6 +338,7 @@ namespace game3
             this.Controls.Add(this.pictureBox12);
             this.Name = "Form1";
             this.Text = "JUMP";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.platform)).EndInit();
